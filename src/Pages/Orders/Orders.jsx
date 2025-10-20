@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import Layout from "../../Components/Layout/Layout";
+import LayOut from "../../Components/LayOut/LayOut";
 import styles from "./Orders.module.css";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
 import { db } from "../../Utility/firebase";
@@ -37,7 +37,7 @@ function Orders() {
   }, [user]); // ADD USER AS DEPENDENCY
 
   return (
-    <Layout>
+    <LayOut>
       <section className={styles.container}>
         <div className={styles.orders__container}>
           <h2>Your Orders</h2>
@@ -60,7 +60,7 @@ function Orders() {
           </div>
         </div>
       </section>
-    </Layout>
+    </LayOut>
   );
 }
 
